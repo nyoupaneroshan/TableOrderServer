@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/colorPrimary"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="34dp"
+            android:inputType="text"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textColorHint="@color/colorPrimary"
+            android:text="Description"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            android:inputType="textMultiLine"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textColorHint="@color/colorPrimary"
+            android:text="Price"
+            android:textColor="@color/colorPrimary"
+            android:textSize="34dp"
+            android:inputType="number"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtdis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="discount%"
+            android:textColorHint="@color/colorPrimary"
+            android:text="dis"
+            android:textColor="@color/colorPrimary"
+            android:textSize="34dp"
+            android:inputType="number"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSelect"
+                android:text="SELECT"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:shadowColor="@android:color/black"
+                ></Button>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:text="UPLOAD"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginEnd="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="0dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                ></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
